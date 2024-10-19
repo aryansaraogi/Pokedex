@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#easyml-logo {
+    width: 600px;
+    height: 150px;
+}
+
+#easyml-path {
+    stroke-dasharray: 500; /* Adjust to the length of the path */
+    stroke-dashoffset: 500; /* Initially hide the path */
+    animation: line-draw 4s ease forwards; /* Animate the stroke drawing */
+}
+
+@keyframes line-draw {
+    to {
+        stroke-dashoffset: 0; /* Draw the path */
+    }
+}
